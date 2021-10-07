@@ -1,0 +1,38 @@
+torch :
+  device : cpu:0
+
+
+logger :
+  directory :
+    basedir : ./logging
+    experimentbasedir : experiment
+    experiment :
+      # Time = usetimestamp, otherwise will use the specified name.
+      name : Time
+      plotsdir : plots
+      modeldir : models
+      checkpointdir : checkpoints
+      videosdir : videos
+      datadir : data
+
+    savelogs :
+      all : False
+      plots : True
+      models : True
+      console : True
+
+    frequency :
+      model : 4
+
+
+algorithm :
+  # name can be DQN, DDQN, PDQN, NOISYDQN, CategoricalDQN, RAINBOW, QuantileDQN, HierarchicalDQN
+  # A2C, A3C, GAE, PPO, ACER, DDPG, TD3, SAC, GAIL, HER
+  name : DQN
+
+
+
+
+
+
+
